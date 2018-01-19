@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/view_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+        android:id="@+id/view_tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_tv_name"
+        android:layout_marginTop="58dp"
+        android:text="login"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/view_tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_tv_login"
+        android:layout_marginTop="62dp"
+        android:text="password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/view_tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_tv_login"
+        android:layout_below="@+id/view_tv_pass"
+        android:layout_marginTop="56dp"
+        android:text="other"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/view_btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_tv_other"
+        android:layout_marginTop="66dp"
+        android:layout_toRightOf="@+id/view_tv_pass"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/view_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_btn_edit"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/view_btn_edit"
+        android:text="Delete" />
+
+</RelativeLayout>

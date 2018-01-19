@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_new" 
+        android:menuCategory="container" 
+        android:visible="true" 
+        android:title="Create new"
+        android:icon="@drawable/add"
+        android:showAsAction="always">    
+    </item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:menuCategory="container"
+        android:showAsAction="ifRoom"
+        android:title="Search"
+        android:visible="true">
+
+    </item>
+    <item
+        android:id="@+id/change_pass"
+        android:menuCategory="container"
+        android:title="Change password"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:menuCategory="container"
+        android:title="About"
+        android:visible="true"/>
+    
+</menu>

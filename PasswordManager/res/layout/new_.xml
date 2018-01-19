@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_login"
+        android:layout_alignParentLeft="true"
+        android:text="Login Id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_login"
+        android:hint="Enter login id (if any)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_pass"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="14dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:hint="Name of entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignLeft="@+id/et_login"
+        android:layout_alignParentRight="true"
+        android:ems="10" > <requestFocus />
+        </EditText>
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_pass"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+         />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_pass"
+        android:layout_marginTop="26dp"
+        android:text="Other"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_other"
+        android:layout_alignBottom="@+id/tv_other"
+        android:layout_alignLeft="@+id/et_pass"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:maxLines="7"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_save"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_save"
+        android:layout_marginRight="40dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/et_other"
+        android:text="Save" />
+
+</RelativeLayout>

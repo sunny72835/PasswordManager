@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.passwordmanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:logo="@drawable/ic_launcher">
+         <activity
+            android:name="com.passwordmanager.Splash"
+            android:configChanges="orientation|screenSize" 
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.passwordmanager.Home"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.passwordmanager.First"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.First" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.passwordmanager.New_"
+            
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.New_" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.passwordmanager.Edit"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.Edit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.passwordmanager.View_"
+           
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.View_" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.passwordmanager.Change_pass"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.Change_pass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.passwordmanager.Search"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.passwordmanager.Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
